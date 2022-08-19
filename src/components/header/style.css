@@ -1,0 +1,88 @@
+.Main-Header-Container {
+  border-radius: 0.75rem;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.On-scroll-class {
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow: rgb(255 255 255 / 90%) 0rem 0rem 0.0625rem 0.0625rem inset,
+    rgb(0 0 0 / 5%) 0rem 1.25rem 1.6875rem 0rem;
+  backdrop-filter: saturate(200%) blur(1.875rem);
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1100;
+}
+.Main-Header-Container .Header-Left-Side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.Main-Header-Container .Header-Left-Side p:first-child {
+  font-size: 16px;
+  color: #929cae;
+  margin: 0;
+}
+.Main-Header-Container .Header-Left-Side p:first-child span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  color: #6c757d;
+}
+.Main-Header-Container .Header-Left-Side p:first-child span:last-child {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 0;
+  color: #344767;
+}
+.Main-Header-Container .Header-Left-Side p:last-child {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #344767;
+  margin: 0;
+}
+.Main-Header-Container .Header-Right-Side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 1rem;
+}
+.Main-Header-Container .Header-Right-Side span:first-child {
+  cursor: none;
+}
+.Main-Header-Container .Header-Right-Side span {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #7b809a;
+  cursor: pointer;
+}
+.Main-Header-Container .Header-Right-Side span:last-child {
+  position: relative;
+}
+.Main-Header-Container .Header-Right-Side span:nth-child(2) {
+  display: none;
+}
+.Main-Header-Container .Header-Right-Side span:last-child .notification {
+  background: red;
+  font-weight: 700;
+  line-height: 10px;
+  font-size: 10px;
+  color: #fff;
+  padding: 4px 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: -8px;
+  left: 9px;
+  margin: 0;
+}
+@media screen and (max-width: 1240px) {
+  .Main-Header-Container .Header-Right-Side span:nth-child(2) {
+    display: inline-block;
+  }
+}

@@ -1,0 +1,123 @@
+.SideBar-Main-Container {
+  padding: 20px 16px 16px 16px;
+  box-shadow: rgb(0 0 0 / 5%) 0rem 1.25rem 1.6875rem 0rem;
+  left: 0px;
+  transform: translateX(0px);
+  border: none;
+  background: linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25));
+  transform: translateX(0px);
+  color: white;
+  border-radius: 0.7rem;
+}
+.SideBar-Main-Container .SideBar-List ul {
+  list-style-type: none;
+}
+.hr {
+  background-image: linear-gradient(
+    to right,
+    rgba(52, 71, 103, 0),
+    rgb(253 253 253 / 94%),
+    rgba(52, 71, 103, 0)
+  ) !important;
+}
+ul .hr {
+  margin-left: -37.9px !important;
+}
+.SideBar-Main-Container .SideBar-List ul li {
+  margin-left: -37.9px;
+}
+.SideBar-heading {
+  display: flex;
+  justify-content: center;
+  grid-gap: 1rem;
+  align-items: center;
+}
+.SideBar-heading h1 {
+  white-space: nowrap;
+  font-size: 14px;
+  margin: 0;
+  color: white;
+  line-height: 21px;
+  font-weight: 600;
+}
+.SideBar-heading img {
+  max-width: 35px;
+}
+.SideBar-Main-Container .SideBar-List ul li:first-child div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  grid-gap: 1.3rem;
+}
+.SideBar-Main-Container .SideBar-List ul li:first-child .Image-Container {
+  border-radius: 50%;
+  max-width: 35px;
+  overflow: hidden;
+}
+.SideBar-Main-Container .SideBar-List ul li:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 1rem !important;
+}
+.SideBar-Main-Container .SideBar-List ul li:first-child p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 0px;
+  color: #e5e5e6;
+  margin: 0;
+}
+.icon {
+  font-size: 22px !important;
+}
+.SideBar-Main-Container .SideBar-List ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.SideBar-Main-Container .SideBar-List ul li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+}
+small {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  margin: 8px 0 8px -30px;
+}
+.SideBar-Main-Container .SideBar-List ul li h1 {
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  grid-gap: 2rem;
+}
+.SideBar-Main-Container .SideBar-List ul li p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 0;
+  color: #fff;
+  margin: 0;
+}
+.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.closeiconsidebar {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: #7b809a;
+}
+@media screen and (min-width: 1240px) {
+  .closeiconsidebar {
+    display: none;
+  }
+}

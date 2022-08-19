@@ -1,0 +1,105 @@
+.DashBoard-Conatiner {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas:
+    "sidebar header header header"
+    "sidebar countryTable countryTable countryTable"
+    "sidebar graphCard graphCard graphCard"
+    "sidebar infoCard infoCard infoCard"
+    "sidebar locationCard locationCard locationCard"
+    "sidebar footer footer footer";
+  padding: 20px 20px 0 20px;
+  /* grid-row-gap: 1.5rem; */
+  grid-column-gap: 2rem;
+}
+.header {
+  grid-area: header;
+  position: sticky;
+  top: 10px;
+  z-index: 22;
+  margin-bottom: 4rem;
+}
+.sideBar {
+  grid-area: sidebar;
+  height: 95vh;
+  width: 265px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  border-radius: 0 0 0.75rem 0.75rem;
+  /* display: none; */
+}
+.countryTable {
+  grid-area: countryTable;
+  margin-bottom: 4rem;
+}
+.infoCard {
+  grid-area: infoCard;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+.locationCard {
+  grid-area: locationCard;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 1.5rem;
+  z-index: 1;
+  margin-bottom: 1rem;
+}
+.graphCard {
+  grid-area: graphCard;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+.footer {
+  grid-area: footer;
+}
+@media screen and (max-width: 991px) {
+  .graphCard {
+    grid-template-columns: auto auto;
+    grid-row-gap: 2rem;
+  }
+  .locationCard {
+    grid-template-columns: auto auto;
+    grid-row-gap: 2rem;
+  }
+  .infoCard {
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .graphCard {
+    grid-template-columns: auto;
+    grid-row-gap: 5rem;
+  }
+  .locationCard {
+    grid-template-columns: auto;
+    grid-row-gap: 5rem;
+  }
+  .infoCard {
+    grid-template-columns: auto auto;
+    grid-row-gap: 5rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .infoCard {
+    grid-template-columns: auto;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .sideBar {
+    margin-left: -500px;
+  }
+  .DashBoard-Conatiner {
+    grid-column-gap: 0;
+  }
+  .sidebarparent {
+    margin-left: -500px;
+  }
+}

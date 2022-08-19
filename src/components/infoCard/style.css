@@ -1,0 +1,82 @@
+.Info-Card-Container {
+  background-color: #fff;
+  padding: 0 16px;
+  border: 0px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.75rem;
+  box-shadow: rgb(0 0 0 / 10%) 0rem 0.25rem 0.375rem -0.0625rem,
+    rgb(0 0 0 / 6%) 0rem 0.125rem 0.25rem -0.0625rem;
+}
+.Info-Card-Container .Info-Card-Body {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.Info-Card-Container .Info-Card-Body .Content-container h1 {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: #7b809a;
+  margin-bottom: 0;
+}
+
+.Info-Card-Container .Info-Card-Body .Content-container p {
+  font-weight: 700;
+  font-size: 24px;
+  color: #344767;
+  margin: 0;
+  text-align: right;
+}
+.Info-Card-Container .Info-Card-Body .Logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -24px;
+  width: 4rem;
+  height: 4rem;
+  opacity: 1;
+  color: rgb(255, 255, 255);
+  border-radius: 0.75rem;
+  box-shadow: rgb(0 0 0 / 14%) 0rem 0.25rem 1.25rem 0rem,
+    rgb(64 64 64 / 40%) 0rem 0.4375rem 0.625rem -0.3125rem;
+}
+.Info-Card-Container .Info-Card-Body .dark {
+  background: linear-gradient(
+    195deg,
+    rgb(66, 66, 74),
+    rgb(25, 25, 25)
+  ) !important;
+}
+.Info-Card-Container .Info-Card-Body .primary {
+  background: linear-gradient(
+    195deg,
+    rgb(73, 163, 241),
+    rgb(26, 115, 232)
+  ) !important;
+}
+.Info-Card-Container .Info-Card-Body .success {
+  background: linear-gradient(
+    195deg,
+    rgb(102, 187, 106),
+    rgb(67, 160, 71)
+  ) !important;
+}
+.Info-Card-Container .Info-Card-Body .pink {
+  background: linear-gradient(
+    195deg,
+    rgb(236, 64, 122),
+    rgb(216, 27, 96)
+  ) !important;
+}
+.Info-Card-Container .Info-Card-Footer p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: #7b809a;
+}
+.Info-Card-Container .Info-Card-Footer p span {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #4caf50;
+}

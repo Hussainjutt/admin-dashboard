@@ -1,0 +1,51 @@
+.Main-Footer-Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 16px 0 16px;
+}
+.Main-Footer-Container .Footer-Left-Side div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 0.3rem;
+}
+.Main-Footer-Container .Footer-Left-Side div p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  color: #7b809a;
+}
+.Main-Footer-Container .Footer-Left-Side div p:first-child span {
+  position: relative;
+  top: 2px;
+}
+.Main-Footer-Container .Footer-Left-Side div p:nth-child(2) {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #344767;
+}
+.Main-Footer-Container .Footer-Right-Side {
+  display: flex;
+  justify-content: space-between;
+  grid-gap: 2rem;
+  align-items: center;
+}
+.Main-Footer-Container .Footer-Right-Side p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #7b809a;
+  cursor: pointer;
+}
+@media screen and (max-width: 991px) {
+  .Main-Footer-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0.5rem;
+  }
+}

@@ -1,0 +1,172 @@
+.Countries_List_table {
+  background-color: #fff;
+  padding: 0 26px;
+  border: 0px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.75rem;
+  box-shadow: rgb(0 0 0 / 10%) 0rem 0.25rem 0.375rem -0.0625rem,
+    rgb(0 0 0 / 6%) 0rem 0.125rem 0.25rem -0.0625rem;
+}
+.Countries_List_table .Countries_List_Body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 2rem;
+}
+.Countries-location {
+  min-width: 27rem;
+}
+
+.Countries_List_table table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+tbody {
+  display: table-row-group;
+}
+.Counties-table {
+  width: 100%;
+  overflow-x: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.75rem;
+  height: 100%;
+  box-shadow: none;
+}
+.Countries_List_table
+  .Countries_List_Body
+  .Counties-table
+  table
+  tr
+  td:first-child {
+  text-align: left;
+}
+.Countries_List_table
+  .Countries_List_Body
+  .Counties-table
+  table
+  tr
+  td:nth-child(2) {
+  text-align: left;
+}
+.Countries_List_table .Countries_List_Body .Counties-table table tr td {
+  text-align: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 0.0625rem solid rgb(240, 242, 245);
+}
+.Countries_List_table .Countries_List_Body .Counties-table table tr td h1 {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #7b809a;
+  margin-bottom: 0;
+}
+.Countries_List_table .Countries_List_Body .Counties-table table tr td p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #344767;
+  margin-top: 0;
+}
+.Countries_List_table .Countries_List_Head .Logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -24px;
+  width: 4rem;
+  height: 4rem;
+  opacity: 1;
+  background: linear-gradient(195deg, rgb(102, 187, 106), rgb(67, 160, 71));
+  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  border-radius: 0.75rem;
+  box-shadow: rgb(0 0 0 / 14%) 0rem 0.25rem 1.25rem 0rem,
+    rgb(64 64 64 / 40%) 0rem 0.4375rem 0.625rem -0.3125rem;
+}
+.Countries_List_table .Countries_List_Head {
+  margin-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  grid-gap: 1rem;
+}
+.Countries_List_table .Countries_List_Head p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #344767;
+}
+@media screen and (max-width: 468px) {
+  .Countries_List_table {
+    padding: 0 12px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .Countries_List_table {
+    padding: 0 5px;
+  }
+}
+@media screen and (max-width: 433px) {
+  .Countries_List_table .Countries_List_Body {
+    max-width: 22rem;
+  }
+}
+@media screen and (max-width: 401px) {
+  .Countries_List_table .Countries_List_Body {
+    max-width: 20rem;
+  }
+}
+@media screen and (max-width: 370px) {
+  .Countries_List_table .Countries_List_Body {
+    max-width: 16rem;
+  }
+}
+/* @media screen and (max-width: 440px) {
+  .Countries_List_table {
+    padding: 0 0;
+  }
+} */
+/* @media screen and (max-width: 415px) {
+  .Counties-table {
+    max-width: 21rem;
+  }
+} */
+@media screen and (max-width: 978px) {
+  .Countries-location {
+    min-width: 22rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .Countries-location {
+    min-width: 15rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Countries_List_table .Countries_List_Body {
+    flex-wrap: wrap;
+  }
+  .Countries-location {
+    min-width: 21rem;
+  }
+  .Countries-location img {
+    max-width: 80%;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 688px) {
+  .Countries-location img {
+    max-width: 60%;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Countries-location img {
+    max-width: 40%;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 595px) {
+  .Countries-location {
+    display: none;
+  }
+}
