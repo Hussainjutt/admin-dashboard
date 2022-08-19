@@ -67,7 +67,7 @@ function configs(labels, datasets) {
             padding: 10,
             font: {
               size: 14,
-              weight: 300,
+              weight: 400,
               family: "Roboto",
               style: "normal",
               lineHeight: 2,
